@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
   # get 'welcome/index'
 
@@ -31,6 +32,10 @@ Rails.application.routes.draw do
   Blog::Application.routes.draw do
     resources :posts
     root to: "welcome#index"
+  end
+
+  resources :posts do
+    resources :comments
   end
 
   # Example resource route with sub-resources:
