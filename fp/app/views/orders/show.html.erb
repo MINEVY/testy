@@ -1,0 +1,67 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @order.name %>
+</p>
+<p>
+  <strong>Amount:</strong>
+  <%= @order.amount %>
+</p>
+<p>
+  <strong>Size:</strong>
+  <%= @order.size %>
+</p>
+<p>
+  <strong>Is_oneside:</strong>
+  <%= @order.is_oneside %>
+</p>
+<p>
+  <strong>Product_type:</strong>
+  <%= @order.product_type %>
+</p>
+<p>
+  <strong>Order_type:</strong>
+  <%= @order.order_type %>
+</p>
+<p>
+  <strong>is_reprint:</strong>
+  <%= @order.is_reprint %>
+</p>
+<p>
+  <strong>assignee:</strong>
+  <%= @order.assignee %>
+</p>
+<p>
+  <strong>customer_name:</strong>
+  <%= @order.customer_name %>
+</p>
+<p>
+  <strong>paper:</strong>
+  <%= @order.paper %>
+</p>
+<p>
+  <strong>machine:</strong>
+  <%= @order.machine %>
+</p>
+<p>
+  <strong>note:</strong>
+  <%= @order.note %>
+</p>
+<p>
+  <strong>proof_date:</strong>
+  <%= @order.proof_date %>
+</p>
+<p>
+  <strong>koryo_date:</strong>
+  <%= @order.koryo_date %>
+</p>
+<p>
+  <strong>print_date:</strong>
+  <%= @order.print_date %>
+</p>
+<p>
+  <strong>bookbind_date:</strong>
+  <%= @order.bookbind_date %>
+</p>
+<%= link_to 'Back', orders_path %>
+| <%= link_to 'Edit', edit_order_path(@order) %>
